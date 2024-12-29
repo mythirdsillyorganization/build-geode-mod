@@ -65,7 +65,7 @@ inputs:
   gh-pat:
     description: GitHub personal access token for downloading stuffs
     required: false
-    default: ""
+    default: ${{ secrets.GH_PAT }}
 
 outputs:
   build-output:
