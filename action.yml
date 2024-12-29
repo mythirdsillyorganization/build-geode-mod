@@ -62,10 +62,6 @@ inputs:
     description: Whether to use LTO (Link Time Optimization) via the CMAKE_INTERPROCEDURAL_OPTIMIZATION flag, improving build size. Defaults to true
     required: false
     default: true
-  gh-pat:
-    description: GitHub personal access token for downloading stuffs
-    required: false
-    default: ${{ secrets.GH_PAT }}
 
 outputs:
   build-output:
@@ -206,7 +202,7 @@ runs:
       uses: actions/checkout@v4
       with:
         repository: geode-catgirls/geode-ios
-        token: ${{ inputs.gh-pat }}
+        token: ${{ secrets.GH_PAT }}
         ref: nightly
         path: geode-sdk-clone
 
