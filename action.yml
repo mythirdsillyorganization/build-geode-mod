@@ -205,7 +205,7 @@ runs:
       if: steps.platform.outputs.target_id == 'ios'
       uses: actions/checkout@v4
       with:
-        repository: mythirdsillyorganization/geode-ios
+        repository: mythirdsillyorganization/geode-ios@main
         token: ${{ inputs.gh-pat }}
         ref: nightly
         path: geode-sdk-clone
