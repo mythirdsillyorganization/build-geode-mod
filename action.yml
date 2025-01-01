@@ -204,7 +204,7 @@ runs:
     - name: Download Geode SDK
       if: steps.platform.outputs.target_id == 'ios'
       shell: bash
-      run: git clone "https://${{ inputs.gh-pat }}@github.com/mythirdsillyorganization/geode-ios" geode-sdk-clone
+      run: git clone -b v4 "https://${{ inputs.gh-pat }}@github.com/myanothersillyorganization/hiii" geode-sdk-clone
       
     - name: Setup Geode SDK
       shell: bash
