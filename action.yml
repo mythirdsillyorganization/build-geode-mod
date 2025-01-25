@@ -37,7 +37,7 @@ inputs:
   bindings:
     description: What repository to use for bindings. Must be in the format "user/repo"
     required: false
-    default: "mythirdsillyorganization/bindings"
+    default: "pengubow/bindings-test"
   bindings-ref:
     description: Which commit/branch to use for bindings. Defaults to latest commit in main branch
     required: false
